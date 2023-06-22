@@ -38,6 +38,8 @@ public abstract class Hero {
         this.strength = strength;
     }
 
+
+
     public abstract void attack(Hero another);
 
     @Override

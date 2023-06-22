@@ -9,9 +9,22 @@ public class Main {
         Hero elf = Elf.getInstance();
         Hero dwarf = Dwarf.getInstance();
 
-        elf.attack(dwarf);
-        System.out.println(dwarf);
-        System.out.println("Dwarf lost the fight");
+        while (elf.getHealth() > 0 && dwarf.getHealth() > 0) {
+            elf.attack(dwarf);
+            System.out.println(dwarf);
 
+            if (dwarf.getHealth() <= 0) {
+                System.out.println("Dwarf has been defeated!");
+                break;
+            }
+
+            dwarf.attack(elf);
+            System.out.println(elf);
+
+            if (elf.getHealth() <= 0) {
+                System.out.println("Elf has been defeated!");
+                break;
+            }
+        }
     }
 }
