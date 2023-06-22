@@ -2,7 +2,7 @@ package package2;
 import package1.Hero;
 
 public class Dwarf extends Hero {
-    private static String[] imiona = {"Dwalin", "Gimli", "Bofur", "Thorin"};
+    private static String[] imiona = {"Dwalin", "Gimli", "Bofur", "Thorin", "Shaper", "Gut"};
 
     public Dwarf(String name, int health, int strength) {
         super(name, health, strength);
