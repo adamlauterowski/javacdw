@@ -4,6 +4,10 @@ import package1.Elf;
 import package1.Hero;
 import package2.Dwarf;
 
+/**
+ * This class tests and prints out the programme
+ */
+
 public class Main {
     public static void main(String[] args) {
         Hero elf = Elf.getInstance();
@@ -25,6 +29,9 @@ public class Main {
                 System.out.println("Elf has been defeated!");
                 break;
             }
+            /**
+             * Loop which causes and Elf to fight with Dwarf unless someone has less or 0 health points
+             */
         }
     }
 }
