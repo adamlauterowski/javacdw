@@ -9,7 +9,6 @@ public class Main {
         Hero elf = Elf.getInstance();
         Hero dwarf = Dwarf.getInstance();
 
-
         elf.attack(dwarf);
         System.out.println(dwarf);
         System.out.println("Dwarf lost the fight");

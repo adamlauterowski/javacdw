@@ -3,7 +3,7 @@ package package1;
 import java.util.Random;
 
 public abstract class Hero {
-    public   String name;
+    public  String name;
     public int health;
     public int strength;
     protected static Random rand = new Random();
